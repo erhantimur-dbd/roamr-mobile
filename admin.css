@@ -1,0 +1,183 @@
+/* ============================================
+   RoamR Admin Portal — Specific Styles
+   ============================================ */
+
+/* --- Dashboard Layout --- */
+.dashboard-row {
+    margin-bottom: 24px;
+}
+.chart-placeholder {
+    background: #fff;
+    border: 1px solid var(--gray-200);
+    border-radius: var(--radius-lg);
+    padding: 48px;
+    text-align: center;
+    color: var(--gray-400);
+}
+.chart-placeholder svg {
+    width: 48px;
+    height: 48px;
+    margin-bottom: 12px;
+    color: var(--gray-300);
+}
+.chart-placeholder h4 {
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--gray-600);
+    margin-bottom: 4px;
+}
+.chart-placeholder p {
+    font-size: 13px;
+}
+
+/* --- Mini Table (Dashboard) --- */
+.mini-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+.mini-table thead th {
+    padding: 10px 16px;
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--gray-500);
+    background: var(--gray-50);
+    border-bottom: 1px solid var(--gray-200);
+    text-align: left;
+    white-space: nowrap;
+}
+.mini-table tbody td {
+    padding: 12px 16px;
+    font-size: 13px;
+    color: var(--gray-700);
+    border-bottom: 1px solid var(--gray-100);
+    white-space: nowrap;
+}
+.mini-table tbody tr:hover { background: var(--gray-50); }
+.mini-table tbody tr:last-child td { border-bottom: none; }
+.mini-table .cell-link {
+    color: var(--brand);
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: none;
+}
+.mini-table .cell-link:hover { text-decoration: underline; }
+
+.view-all-link {
+    display: block;
+    text-align: center;
+    padding: 14px;
+    border-top: 1px solid var(--gray-100);
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--brand);
+    text-decoration: none;
+}
+.view-all-link:hover { background: var(--gray-50); }
+
+/* --- Order Detail --- */
+.order-detail-grid {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    gap: 24px;
+    margin-bottom: 24px;
+}
+.status-select-row {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    margin-top: 16px;
+}
+.status-select-row select {
+    flex: 1;
+    padding: 8px 12px;
+    border: 1px solid var(--gray-200);
+    border-radius: var(--radius-sm);
+    font-family: inherit;
+    font-size: 14px;
+}
+
+/* --- Customer Detail Tabs --- */
+.customer-detail-top {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 24px;
+    margin-bottom: 24px;
+}
+
+/* --- Inventory Expandable Row --- */
+.inventory-expand {
+    display: none;
+    padding: 16px 20px;
+    background: var(--gray-50);
+    border-bottom: 1px solid var(--gray-100);
+}
+.inventory-expand.open { display: block; }
+.inventory-expand .usage-bars {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+/* --- Analytics Breakdown --- */
+.breakdown-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+    margin-top: 24px;
+}
+.breakdown-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+.breakdown-table thead th {
+    padding: 10px 16px;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: var(--gray-500);
+    border-bottom: 2px solid var(--gray-200);
+    text-align: left;
+}
+.breakdown-table thead th:last-child { text-align: right; }
+.breakdown-table tbody td {
+    padding: 12px 16px;
+    font-size: 14px;
+    color: var(--gray-700);
+    border-bottom: 1px solid var(--gray-100);
+}
+.breakdown-table tbody td:last-child {
+    text-align: right;
+    font-weight: 600;
+    font-family: 'JetBrains Mono', monospace;
+}
+.breakdown-bar-cell {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.breakdown-bar {
+    flex: 1;
+    height: 6px;
+    background: var(--gray-100);
+    border-radius: 100px;
+    overflow: hidden;
+}
+.breakdown-bar-fill {
+    height: 100%;
+    background: var(--brand);
+    border-radius: 100px;
+}
+
+/* --- Responsive --- */
+@media (max-width: 1024px) {
+    .order-detail-grid { grid-template-columns: 1fr; }
+    .customer-detail-top { grid-template-columns: 1fr; }
+    .breakdown-grid { grid-template-columns: 1fr; }
+    .inventory-expand .usage-bars { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 768px) {
+    .inventory-expand .usage-bars { grid-template-columns: 1fr; }
+}

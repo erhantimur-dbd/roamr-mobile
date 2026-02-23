@@ -1,0 +1,768 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RoamR — Travel eSIM | Stay Connected Everywhere</title>
+    <meta name="description" content="Premium travel eSIMs for UK, Europe & Türkiye. Instant setup, 99% coverage, 3 simple plans. Your no-nonsense travel connectivity partner.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav" id="nav">
+        <div class="container nav-inner">
+            <a href="#" class="logo">
+                <svg class="logo-icon" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                    <rect width="32" height="32" rx="8" fill="currentColor"/>
+                    <path d="M8 12C8 12 12 8 16 8C20 8 24 12 24 12" stroke="white" stroke-width="2.5" stroke-linecap="round"/>
+                    <path d="M10 16C10 16 13 13 16 13C19 13 22 16 22 16" stroke="white" stroke-width="2.5" stroke-linecap="round"/>
+                    <path d="M12 20C12 20 14 18 16 18C18 18 20 20 20 20" stroke="white" stroke-width="2.5" stroke-linecap="round"/>
+                    <circle cx="16" cy="23" r="1.5" fill="white"/>
+                </svg>
+                <span>RoamR</span>
+            </a>
+            <div class="nav-links" id="navLinks">
+                <a href="#destinations">Destinations</a>
+                <a href="#how-it-works">How It Works</a>
+                <a href="#pricing">Plans</a>
+                <a href="#support">Support</a>
+            </div>
+            <div class="nav-actions">
+                <a href="customer.html" class="nav-account-link">My Account</a>
+                <a href="#pricing" class="btn btn-primary btn-sm">Get Your eSIM</a>
+                <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-bg">
+            <div class="hero-gradient"></div>
+            <div class="hero-pattern"></div>
+        </div>
+        <div class="container hero-content">
+            <div class="hero-badge">
+                <span class="badge-dot"></span>
+                Now available: UK, Europe & Türkiye
+            </div>
+            <h1>Stay connected<br><span class="text-gradient">wherever you roam</span></h1>
+            <p class="hero-subtitle">Premium travel eSIMs with 99% coverage. Three simple plans. Instant delivery to your inbox. No contracts, no surprises — just reliable connectivity when you need it.</p>
+            <div class="hero-cta">
+                <a href="#destinations" class="btn btn-primary btn-lg">Choose Your Destination</a>
+                <a href="#how-it-works" class="btn btn-ghost btn-lg">See How It Works</a>
+            </div>
+            <div class="hero-trust">
+                <div class="trust-item">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M16.667 5L7.5 14.167 3.333 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    Instant email delivery
+                </div>
+                <div class="trust-item">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M16.667 5L7.5 14.167 3.333 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    99% network coverage
+                </div>
+                <div class="trust-item">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M16.667 5L7.5 14.167 3.333 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    24/7 support
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Destination Selector -->
+    <section class="destinations" id="destinations">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Step 1</span>
+                <h2>Where are you heading?</h2>
+                <p>Select your destination to see available plans and coverage details.</p>
+            </div>
+            <div class="destination-grid">
+                <button class="destination-card" data-region="uk" id="dest-uk">
+                    <div class="dest-flag">🇬🇧</div>
+                    <div class="dest-info">
+                        <h3>United Kingdom</h3>
+                        <p>England, Scotland, Wales & N. Ireland</p>
+                    </div>
+                    <div class="dest-coverage">
+                        <span class="coverage-badge">99% coverage</span>
+                    </div>
+                    <svg class="dest-arrow" width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M7.5 15L12.5 10L7.5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </button>
+                <button class="destination-card" data-region="europe" id="dest-europe">
+                    <div class="dest-flag">🇪🇺</div>
+                    <div class="dest-info">
+                        <h3>Europe</h3>
+                        <p>30+ countries across the EU & EEA</p>
+                    </div>
+                    <div class="dest-coverage">
+                        <span class="coverage-badge">99% coverage</span>
+                    </div>
+                    <svg class="dest-arrow" width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M7.5 15L12.5 10L7.5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </button>
+                <button class="destination-card" data-region="turkiye" id="dest-turkiye">
+                    <div class="dest-flag">🇹🇷</div>
+                    <div class="dest-info">
+                        <h3>Türkiye</h3>
+                        <p>Full coverage across all 81 provinces</p>
+                    </div>
+                    <div class="dest-coverage">
+                        <span class="coverage-badge">99% coverage</span>
+                    </div>
+                    <svg class="dest-arrow" width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M7.5 15L12.5 10L7.5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Duration Selector (shown after destination) -->
+    <section class="duration-section hidden" id="duration">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Step 2</span>
+                <h2>How long is your trip?</h2>
+                <p>Choose your trip duration — you can always top up if your plans change.</p>
+            </div>
+            <div class="duration-options">
+                <button class="duration-btn" data-days="7">
+                    <span class="dur-days">7</span>
+                    <span class="dur-label">days</span>
+                    <span class="dur-desc">Weekend / short trip</span>
+                </button>
+                <button class="duration-btn" data-days="14">
+                    <span class="dur-days">14</span>
+                    <span class="dur-label">days</span>
+                    <span class="dur-desc">Two-week holiday</span>
+                </button>
+                <button class="duration-btn active" data-days="30">
+                    <span class="dur-days">30</span>
+                    <span class="dur-label">days</span>
+                    <span class="dur-desc">Extended stay</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="pricing hidden" id="pricing">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Step 3</span>
+                <h2>Pick your plan</h2>
+                <p id="pricing-subtitle">Simple, transparent pricing for <span id="region-name">your destination</span>. All plans include voice, text & data.</p>
+            </div>
+            <div class="pricing-grid">
+                <!-- Starter Plan -->
+                <div class="plan-card" data-tier="starter">
+                    <div class="plan-header">
+                        <span class="plan-name">Starter</span>
+                        <span class="plan-tagline">For light users</span>
+                    </div>
+                    <div class="plan-price">
+                        <span class="price-currency">£</span>
+                        <span class="price-amount" id="price-starter">4.99</span>
+                        <span class="price-period">/ <span class="price-days">30</span> days</span>
+                    </div>
+                    <ul class="plan-features">
+                        <li>
+                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M15 4.5L6.75 12.75L3 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                            <span><strong id="data-starter">1 GB</strong> data</span>
+                        </li>
+                        <li>
+                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M15 4.5L6.75 12.75L3 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                            <span><strong id="mins-starter">50</strong> minutes calls</span>
+                        </li>
+                        <li>
+                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M15 4.5L6.75 12.75L3 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                            <span><strong id="texts-starter">50</strong> texts</span>
+                        </li>
+                        <li>
+                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M15 4.5L6.75 12.75L3 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                            <span>4G/LTE speeds</span>
+                        </li>
+                        <li>
+                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M15 4.5L6.75 12.75L3 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                            <span>Instant top-up available</span>
+                        </li>
+                        <li>
+                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M15 4.5L6.75 12.75L3 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                            <span>24/7 chat support</span>
+                        </li>
+                    </ul>
+                    <button class="btn btn-outline btn-block plan-cta">Get Starter</button>
+                </div>
+
+                <!-- Explorer Plan -->
+                <div class="plan-card featured" data-tier="explorer">
+                    <div class="plan-popular">Most Popular</div>
+                    <div class="plan-header">
+                        <span class="plan-name">Explorer</span>
+                        <span class="plan-tagline">For most travellers</span>
+                    </div>
+                    <div class="plan-price">
+                        <span class="price-currency">£</span>
+                        <span class="price-amount" id="price-explorer">12.99</span>
+                        <span class="price-period">/ <span class="price-days">30</span> days</span>
+                    </div>
+                    <ul class="plan-features">
+                        <li>
+                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M15 4.5L6.75 12.75L3 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                            <span><strong id="data-explorer">5 GB</strong> data</span>
+                        </li>
+                        <li>
+                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M15 4.5L6.75 12.75L3 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                            <span><strong id="mins-explorer">200</strong> minutes calls</span>
+                        </li>
+                        <li>
+                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M15 4.5L6.75 12.75L3 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                            <span><strong id="texts-explorer">200</strong> texts</span>
+                        </li>
+                        <li>
+                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M15 4.5L6.75 12.75L3 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                            <span>5G where available</span>
+                        </li>
+                        <li>
+                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M15 4.5L6.75 12.75L3 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                            <span>Instant top-up available</span>
+                        </li>
+                        <li>
+                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M15 4.5L6.75 12.75L3 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                            <span>24/7 priority support</span>
+                        </li>
+                    </ul>
+                    <button class="btn btn-primary btn-block plan-cta">Get Explorer</button>
+                </div>
+
+                <!-- Pro Plan -->
+                <div class="plan-card" data-tier="pro">
+                    <div class="plan-header">
+                        <span class="plan-name">Pro</span>
+                        <span class="plan-tagline">For heavy users & digital nomads</span>
+                    </div>
+                    <div class="plan-price">
+                        <span class="price-currency">£</span>
+                        <span class="price-amount" id="price-pro">24.99</span>
+                        <span class="price-period">/ <span class="price-days">30</span> days</span>
+                    </div>
+                    <ul class="plan-features">
+                        <li>
+                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M15 4.5L6.75 12.75L3 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                            <span><strong id="data-pro">20 GB</strong> data</span>
+                        </li>
+                        <li>
+                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M15 4.5L6.75 12.75L3 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                            <span><strong id="mins-pro">Unlimited</strong> calls</span>
+                        </li>
+                        <li>
+                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M15 4.5L6.75 12.75L3 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                            <span><strong id="texts-pro">Unlimited</strong> texts</span>
+                        </li>
+                        <li>
+                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M15 4.5L6.75 12.75L3 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                            <span>5G where available</span>
+                        </li>
+                        <li>
+                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M15 4.5L6.75 12.75L3 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                            <span>Hotspot / tethering</span>
+                        </li>
+                        <li>
+                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M15 4.5L6.75 12.75L3 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                            <span>24/7 priority support</span>
+                        </li>
+                    </ul>
+                    <button class="btn btn-outline btn-block plan-cta">Get Pro</button>
+                </div>
+            </div>
+            <p class="pricing-note">All plans auto-expire — no recurring charges. Need more? <a href="#topup">Top up instantly</a> from your account.</p>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="how-it-works" id="how-it-works">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Simple Setup</span>
+                <h2>Connected in 3 minutes</h2>
+                <p>No store visits, no paperwork, no waiting. Just pick, scan, and go.</p>
+            </div>
+            <div class="steps-grid">
+                <div class="step-card">
+                    <div class="step-number">1</div>
+                    <div class="step-icon">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><path d="M26.667 8L12 22.667 5.333 16" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </div>
+                    <h3>Choose your plan</h3>
+                    <p>Pick your destination, trip length, and the plan that fits your usage. Takes 30 seconds.</p>
+                </div>
+                <div class="step-connector">
+                    <svg width="40" height="2" viewBox="0 0 40 2"><line x1="0" y1="1" x2="40" y2="1" stroke="currentColor" stroke-width="2" stroke-dasharray="4 4"/></svg>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">2</div>
+                    <div class="step-icon">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><rect x="5" y="4" width="22" height="24" rx="3" stroke="currentColor" stroke-width="2.5"/><rect x="11" y="10" width="10" height="10" rx="1" stroke="currentColor" stroke-width="2"/></svg>
+                    </div>
+                    <h3>Scan the QR code</h3>
+                    <p>We email your eSIM instantly. Open the email, scan the QR code with your phone's camera.</p>
+                </div>
+                <div class="step-connector">
+                    <svg width="40" height="2" viewBox="0 0 40 2"><line x1="0" y1="1" x2="40" y2="1" stroke="currentColor" stroke-width="2" stroke-dasharray="4 4"/></svg>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">3</div>
+                    <div class="step-icon">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><circle cx="16" cy="16" r="12" stroke="currentColor" stroke-width="2.5"/><path d="M8 16C8 16 12 10 16 10C20 10 24 16 24 16" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/><path d="M10 20C10 20 13 17 16 17C19 17 22 20 22 20" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/><circle cx="16" cy="23" r="1.5" fill="currentColor"/></svg>
+                    </div>
+                    <h3>You're connected</h3>
+                    <p>Your eSIM activates instantly. Full coverage from the moment you land. That's it.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features / Why RoamR -->
+    <section class="features" id="features">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Why RoamR</span>
+                <h2>Built for travellers,<br>not telecoms</h2>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </div>
+                    <h3>Instant delivery</h3>
+                    <p>Your eSIM arrives via email within seconds of purchase. QR code included — scan and connect.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </div>
+                    <h3>99% coverage</h3>
+                    <p>We partner with tier-1 networks in every region. You get the same coverage as locals.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M12 8v4l3 3" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/></svg>
+                    </div>
+                    <h3>24/7 support</h3>
+                    <p>Real people, any timezone. Live chat, email, or WhatsApp — we're here when you need us.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                    </div>
+                    <h3>Easy top-up</h3>
+                    <p>Running low? Add more data, minutes, or texts instantly from your account. No new SIM needed.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><rect x="2" y="7" width="20" height="14" rx="2" stroke="currentColor" stroke-width="2"/><path d="M16 3h-8l-2 4h12l-2-4z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </div>
+                    <h3>No contracts</h3>
+                    <p>Pay once, use it, done. Plans auto-expire with no recurring charges. Zero commitment.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><rect x="5" y="2" width="14" height="20" rx="3" stroke="currentColor" stroke-width="2"/><line x1="5" y1="18" x2="19" y2="18" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="20" r="0.5" fill="currentColor" stroke="currentColor"/></svg>
+                    </div>
+                    <h3>Physical SIMs too</h3>
+                    <p>Device not eSIM compatible? Grab a physical SIM from our selected retail partners.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Compatible Devices -->
+    <section class="compatibility" id="compatibility">
+        <div class="container">
+            <div class="compat-card">
+                <div class="compat-content">
+                    <span class="section-tag">Compatibility</span>
+                    <h2>Works with your device</h2>
+                    <p>eSIM is supported on most modern smartphones, tablets, and smartwatches. Here are some of the most popular compatible devices.</p>
+                    <div class="device-grid">
+                        <div class="device-group">
+                            <h4>Apple</h4>
+                            <ul>
+                                <li>iPhone XR / XS and newer</li>
+                                <li>iPad Pro (3rd gen+), Air (3rd gen+)</li>
+                                <li>Apple Watch Series 3+</li>
+                            </ul>
+                        </div>
+                        <div class="device-group">
+                            <h4>Samsung</h4>
+                            <ul>
+                                <li>Galaxy S20 and newer</li>
+                                <li>Galaxy Z Fold / Flip series</li>
+                                <li>Galaxy Watch 4+</li>
+                            </ul>
+                        </div>
+                        <div class="device-group">
+                            <h4>Google</h4>
+                            <ul>
+                                <li>Pixel 3 and newer</li>
+                                <li>Pixel Watch</li>
+                            </ul>
+                        </div>
+                        <div class="device-group">
+                            <h4>Others</h4>
+                            <ul>
+                                <li>Huawei P40+, Mate 40+</li>
+                                <li>Sony Xperia 1 III+</li>
+                                <li>OPPO Find X3+</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <p class="compat-note">Not sure? <a href="#support">Check compatibility</a> — we'll help you find out.</p>
+                </div>
+                <div class="compat-visual">
+                    <div class="phone-mockup">
+                        <div class="phone-screen">
+                            <div class="phone-status-bar">
+                                <span>9:41</span>
+                                <div class="phone-signals">
+                                    <span class="signal-icon">
+                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><rect x="1" y="10" width="3" height="5" rx="0.5" fill="currentColor"/><rect x="5.5" y="7" width="3" height="8" rx="0.5" fill="currentColor"/><rect x="10" y="4" width="3" height="11" rx="0.5" fill="currentColor"/></svg>
+                                    </span>
+                                    <span class="wifi-icon">RoamR</span>
+                                </div>
+                            </div>
+                            <div class="phone-esim-display">
+                                <div class="qr-placeholder">
+                                    <svg width="80" height="80" viewBox="0 0 80 80" fill="none">
+                                        <rect x="4" y="4" width="24" height="24" rx="2" stroke="currentColor" stroke-width="3"/>
+                                        <rect x="10" y="10" width="12" height="12" rx="1" fill="currentColor"/>
+                                        <rect x="52" y="4" width="24" height="24" rx="2" stroke="currentColor" stroke-width="3"/>
+                                        <rect x="58" y="10" width="12" height="12" rx="1" fill="currentColor"/>
+                                        <rect x="4" y="52" width="24" height="24" rx="2" stroke="currentColor" stroke-width="3"/>
+                                        <rect x="10" y="58" width="12" height="12" rx="1" fill="currentColor"/>
+                                        <rect x="36" y="4" width="8" height="8" rx="1" fill="currentColor"/>
+                                        <rect x="36" y="20" width="8" height="8" rx="1" fill="currentColor"/>
+                                        <rect x="36" y="36" width="8" height="8" rx="1" fill="currentColor"/>
+                                        <rect x="52" y="36" width="8" height="8" rx="1" fill="currentColor"/>
+                                        <rect x="68" y="36" width="8" height="8" rx="1" fill="currentColor"/>
+                                        <rect x="36" y="52" width="8" height="8" rx="1" fill="currentColor"/>
+                                        <rect x="52" y="52" width="24" height="24" rx="2" stroke="currentColor" stroke-width="3"/>
+                                        <rect x="36" y="68" width="8" height="8" rx="1" fill="currentColor"/>
+                                    </svg>
+                                </div>
+                                <p class="qr-label">Scan to install your eSIM</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Coverage Map / Network Partners -->
+    <section class="coverage-section" id="coverage">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Coverage</span>
+                <h2>Tier-1 network partners</h2>
+                <p>We don't cut corners on connectivity. Our eSIMs connect to the leading networks in every region.</p>
+            </div>
+            <div class="coverage-grid">
+                <div class="coverage-region">
+                    <div class="region-header">
+                        <span class="region-flag">🇬🇧</span>
+                        <h3>United Kingdom</h3>
+                    </div>
+                    <div class="network-partners">
+                        <span class="network-tag">EE</span>
+                        <span class="network-tag">Three</span>
+                        <span class="network-tag">Vodafone</span>
+                    </div>
+                    <div class="coverage-stat">
+                        <div class="coverage-bar"><div class="coverage-fill" style="width: 99%"></div></div>
+                        <span>99% population coverage</span>
+                    </div>
+                </div>
+                <div class="coverage-region">
+                    <div class="region-header">
+                        <span class="region-flag">🇪🇺</span>
+                        <h3>Europe</h3>
+                    </div>
+                    <div class="network-partners">
+                        <span class="network-tag">Deutsche Telekom</span>
+                        <span class="network-tag">Orange</span>
+                        <span class="network-tag">Vodafone</span>
+                        <span class="network-tag">+27 more</span>
+                    </div>
+                    <div class="coverage-stat">
+                        <div class="coverage-bar"><div class="coverage-fill" style="width: 99%"></div></div>
+                        <span>99% population coverage</span>
+                    </div>
+                </div>
+                <div class="coverage-region">
+                    <div class="region-header">
+                        <span class="region-flag">🇹🇷</span>
+                        <h3>Türkiye</h3>
+                    </div>
+                    <div class="network-partners">
+                        <span class="network-tag">Turkcell</span>
+                        <span class="network-tag">Vodafone TR</span>
+                        <span class="network-tag">Türk Telekom</span>
+                    </div>
+                    <div class="coverage-stat">
+                        <div class="coverage-bar"><div class="coverage-fill" style="width: 99%"></div></div>
+                        <span>99% population coverage</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Top Up Section -->
+    <section class="topup-section" id="topup">
+        <div class="container">
+            <div class="topup-card">
+                <div class="topup-content">
+                    <span class="section-tag">Flexible</span>
+                    <h2>Plans change.<br>We get it.</h2>
+                    <p>Staying longer? Need more data? Top up your eSIM in seconds — right from your phone. No new SIM, no new setup. Same number, same connection.</p>
+                    <div class="topup-options">
+                        <div class="topup-item">
+                            <span class="topup-amount">+1 GB</span>
+                            <span class="topup-price">from £2.99</span>
+                        </div>
+                        <div class="topup-item">
+                            <span class="topup-amount">+5 GB</span>
+                            <span class="topup-price">from £9.99</span>
+                        </div>
+                        <div class="topup-item">
+                            <span class="topup-amount">+7 days</span>
+                            <span class="topup-price">from £4.99</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="topup-visual">
+                    <div class="topup-demo">
+                        <div class="topup-bar">
+                            <div class="topup-bar-label">
+                                <span>Data remaining</span>
+                                <span class="topup-bar-value">1.2 GB / 5 GB</span>
+                            </div>
+                            <div class="topup-progress">
+                                <div class="topup-progress-fill" style="width: 24%"></div>
+                            </div>
+                        </div>
+                        <div class="topup-bar">
+                            <div class="topup-bar-label">
+                                <span>Days remaining</span>
+                                <span class="topup-bar-value">8 / 30 days</span>
+                            </div>
+                            <div class="topup-progress">
+                                <div class="topup-progress-fill" style="width: 27%"></div>
+                            </div>
+                        </div>
+                        <button class="btn btn-primary btn-block topup-btn">Top Up Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq" id="faq">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">FAQ</span>
+                <h2>Common questions</h2>
+            </div>
+            <div class="faq-grid">
+                <details class="faq-item">
+                    <summary>What is an eSIM?</summary>
+                    <p>An eSIM (embedded SIM) is a digital SIM built into your phone. Instead of inserting a physical card, you scan a QR code and your phone connects to a mobile network. It's the same technology, just without the plastic.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>How quickly will I receive my eSIM?</summary>
+                    <p>Instantly. As soon as your purchase is confirmed, we email you a QR code. Scan it, follow the on-screen instructions, and you're connected in under 3 minutes.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>Can I keep my existing number?</summary>
+                    <p>Yes. Your eSIM works alongside your existing SIM. Keep your home number for calls and texts, and use the RoamR eSIM for data and local calls — your phone handles both.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>What happens when my plan expires?</summary>
+                    <p>Nothing surprising. Your plan simply ends — no auto-renewal, no hidden charges. If you still need connectivity, top up or buy a new plan in seconds.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>Can I use my eSIM in multiple countries?</summary>
+                    <p>Our Europe plan covers 30+ countries with a single eSIM. No need to switch plans when crossing borders — it just works.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>What if my phone doesn't support eSIM?</summary>
+                    <p>We offer physical SIM cards at selected retail partners. Check our <a href="#compatibility">compatibility section</a> or contact support — we'll help you find the right option.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>How does top-up work?</summary>
+                    <p>Log into your RoamR account, choose what you need (more data, minutes, or extra days), pay, and it's added to your existing plan immediately. Same eSIM, no reinstall needed.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>Is there a fair usage policy?</summary>
+                    <p>All plans come with clearly stated allowances. There are no hidden throttling or fair usage surprises. What you see is what you get.</p>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <!-- Support / CTA -->
+    <section class="support-section" id="support">
+        <div class="container">
+            <div class="support-card">
+                <h2>Need help? We're here 24/7.</h2>
+                <p>Real people, real answers, any timezone. Whether you're setting up in a taxi from the airport or troubleshooting at midnight — we've got you.</p>
+                <div class="support-channels">
+                    <a href="#" class="support-channel">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        <span>Live Chat</span>
+                    </a>
+                    <a href="#" class="support-channel">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" stroke="currentColor" stroke-width="2"/><path d="M22 6l-10 7L2 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        <span>Email</span>
+                    </a>
+                    <a href="#" class="support-channel">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        <span>WhatsApp</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#" class="logo">
+                        <svg class="logo-icon" width="28" height="28" viewBox="0 0 32 32" fill="none">
+                            <rect width="32" height="32" rx="8" fill="currentColor"/>
+                            <path d="M8 12C8 12 12 8 16 8C20 8 24 12 24 12" stroke="white" stroke-width="2.5" stroke-linecap="round"/>
+                            <path d="M10 16C10 16 13 13 16 13C19 13 22 16 22 16" stroke="white" stroke-width="2.5" stroke-linecap="round"/>
+                            <path d="M12 20C12 20 14 18 16 18C18 18 20 20 20 20" stroke="white" stroke-width="2.5" stroke-linecap="round"/>
+                            <circle cx="16" cy="23" r="1.5" fill="white"/>
+                        </svg>
+                        <span>RoamR</span>
+                    </a>
+                    <p>Your no-nonsense travel connectivity partner. Premium eSIMs for UK, Europe & Türkiye.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Product</h4>
+                    <a href="#destinations">Destinations</a>
+                    <a href="#pricing">Plans & Pricing</a>
+                    <a href="#topup">Top Up</a>
+                    <a href="#compatibility">Compatibility</a>
+                </div>
+                <div class="footer-links">
+                    <h4>Company</h4>
+                    <a href="#">About Us</a>
+                    <a href="#">Retail Partners</a>
+                    <a href="#">Careers</a>
+                    <a href="#">Press</a>
+                </div>
+                <div class="footer-links">
+                    <h4>Support</h4>
+                    <a href="#faq">FAQ</a>
+                    <a href="#support">Contact Us</a>
+                    <a href="#">Setup Guide</a>
+                    <a href="#">Service Status</a>
+                </div>
+                <div class="footer-links">
+                    <h4>Account</h4>
+                    <a href="customer.html">My Account</a>
+                    <a href="customer.html#orders">Order History</a>
+                    <a href="customer.html#topup">Top Up</a>
+                    <a href="admin.html">Admin Portal</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 RoamR. All rights reserved.</p>
+                <div class="footer-legal">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Order Modal -->
+    <div class="modal-overlay hidden" id="orderModal">
+        <div class="modal">
+            <button class="modal-close" id="modalClose">&times;</button>
+            <div class="modal-header">
+                <h2>Complete your order</h2>
+                <p>Your eSIM will be delivered instantly via email.</p>
+            </div>
+            <div class="modal-summary" id="modalSummary">
+                <!-- Filled by JS -->
+            </div>
+            <form class="order-form" id="orderForm">
+                <div class="form-group">
+                    <label for="orderEmail">Email address</label>
+                    <input type="email" id="orderEmail" placeholder="you@example.com" required>
+                    <span class="form-hint">We'll send your eSIM QR code here</span>
+                </div>
+                <div class="form-group">
+                    <label for="orderName">Full name</label>
+                    <input type="text" id="orderName" placeholder="Jane Smith" required>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="orderDevice">Your device</label>
+                        <select id="orderDevice">
+                            <option value="">Select device</option>
+                            <optgroup label="Apple">
+                                <option>iPhone 16 / 16 Pro</option>
+                                <option>iPhone 15 / 15 Pro</option>
+                                <option>iPhone 14 / 14 Pro</option>
+                                <option>iPhone 13 / 13 Pro</option>
+                                <option>iPhone 12 / 12 Pro</option>
+                                <option>iPhone 11</option>
+                                <option>iPhone XR / XS</option>
+                                <option>iPad (eSIM model)</option>
+                            </optgroup>
+                            <optgroup label="Samsung">
+                                <option>Galaxy S24 / S24+</option>
+                                <option>Galaxy S23 / S23+</option>
+                                <option>Galaxy S22 / S22+</option>
+                                <option>Galaxy Z Fold / Flip</option>
+                            </optgroup>
+                            <optgroup label="Google">
+                                <option>Pixel 9 / 9 Pro</option>
+                                <option>Pixel 8 / 8 Pro</option>
+                                <option>Pixel 7 / 7 Pro</option>
+                            </optgroup>
+                            <optgroup label="Other">
+                                <option>Other eSIM device</option>
+                            </optgroup>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="orderStart">Activation date</label>
+                        <input type="date" id="orderStart">
+                        <span class="form-hint">Or activate anytime within 90 days</span>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary btn-lg btn-block">
+                    Pay &amp; Get eSIM
+                    <span class="btn-price" id="modalPrice"></span>
+                </button>
+                <p class="form-footer">Secure payment via Stripe. Your eSIM is delivered instantly after payment.</p>
+            </form>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
