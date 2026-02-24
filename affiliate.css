@@ -1,0 +1,801 @@
+/* ============================================
+   RoamR Affiliate & Partner Programme — Styles
+   Page-specific components for affiliate.html
+   ============================================ */
+
+/* --- Active Nav Link --- */
+.nav-link-active {
+    color: var(--brand) !important;
+    font-weight: 600 !important;
+}
+
+/* --- Programme Overview --- */
+.aff-overview {
+    padding: 100px 0;
+}
+
+.aff-tracks-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.aff-track-card {
+    padding: 40px;
+    background: #fff;
+    border: 1px solid var(--gray-200);
+    border-radius: var(--radius-xl);
+    transition: all 0.3s var(--ease);
+    text-align: center;
+}
+
+.aff-track-card:hover {
+    box-shadow: var(--shadow-lg);
+    transform: translateY(-2px);
+}
+
+.aff-track-icon {
+    width: 64px;
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--brand-50);
+    color: var(--brand);
+    border-radius: var(--radius-lg);
+    margin: 0 auto 20px;
+}
+
+.aff-track-card h3 {
+    font-size: 22px;
+    font-weight: 800;
+    color: var(--gray-900);
+    margin-bottom: 12px;
+}
+
+.aff-track-card > p {
+    font-size: 15px;
+    color: var(--gray-500);
+    line-height: 1.6;
+    margin-bottom: 24px;
+}
+
+.aff-track-highlights {
+    list-style: none;
+    text-align: left;
+    margin-bottom: 28px;
+}
+
+.aff-track-highlights li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 8px 0;
+    font-size: 15px;
+    color: var(--gray-600);
+}
+
+.aff-track-highlights li svg {
+    flex-shrink: 0;
+}
+
+/* --- Sections --- */
+.aff-affiliate-section {
+    padding: 100px 0;
+    background: var(--gray-50);
+}
+
+.aff-partner-section {
+    padding: 100px 0;
+}
+
+/* --- Tiers Header --- */
+.aff-tiers-header {
+    text-align: center;
+    margin: 80px 0 40px;
+}
+
+.aff-tiers-header h3 {
+    font-size: 24px;
+    font-weight: 800;
+    color: var(--gray-900);
+    margin-bottom: 8px;
+}
+
+.aff-tiers-header p {
+    font-size: 15px;
+    color: var(--gray-500);
+}
+
+/* --- Commission Tier Cards --- */
+.aff-tiers-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.aff-tier-card {
+    background: #fff;
+    border: 2px solid var(--gray-200);
+    border-radius: var(--radius-xl);
+    padding: 36px 28px;
+    text-align: center;
+    transition: all 0.3s var(--ease);
+}
+
+.aff-tier-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-xl);
+}
+
+.aff-tier-label {
+    display: inline-block;
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    padding: 4px 16px;
+    border-radius: 100px;
+    margin-bottom: 16px;
+    background: var(--gray-100);
+    color: var(--gray-600);
+}
+
+.aff-tier-silver .aff-tier-label {
+    background: rgba(192, 192, 192, 0.2);
+    color: #6B7280;
+}
+
+.aff-tier-gold {
+    border-color: var(--warning);
+}
+
+.aff-tier-gold .aff-tier-label {
+    background: rgba(245, 158, 11, 0.12);
+    color: #B45309;
+}
+
+.aff-tier-rate {
+    font-size: 56px;
+    font-weight: 800;
+    font-family: 'JetBrains Mono', monospace;
+    color: var(--gray-900);
+    line-height: 1;
+    margin-bottom: 4px;
+}
+
+.aff-tier-rate span {
+    font-size: 28px;
+    color: var(--gray-400);
+}
+
+.aff-tier-desc {
+    font-size: 14px;
+    color: var(--gray-500);
+    margin-bottom: 24px;
+}
+
+.aff-tier-card ul {
+    list-style: none;
+    text-align: left;
+}
+
+.aff-tier-card li {
+    padding: 6px 0;
+    font-size: 14px;
+    color: var(--gray-600);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.aff-tier-card li svg {
+    flex-shrink: 0;
+}
+
+/* --- Partner Tier Cards --- */
+.aff-partner-tiers-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    max-width: 1000px;
+    margin: 0 auto;
+    align-items: start;
+}
+
+.aff-partner-tier-card {
+    position: relative;
+    background: #fff;
+    border: 2px solid var(--gray-200);
+    border-radius: var(--radius-xl);
+    padding: 36px 32px;
+    text-align: center;
+    transition: all 0.3s var(--ease);
+}
+
+.aff-partner-tier-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-xl);
+}
+
+.aff-partner-tier-card.featured {
+    border-color: var(--brand);
+    box-shadow: var(--shadow-xl);
+    transform: scale(1.03);
+    z-index: 1;
+}
+
+.aff-partner-tier-card.featured:hover {
+    transform: scale(1.03) translateY(-4px);
+}
+
+.aff-partner-tier-badge {
+    display: inline-block;
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    padding: 4px 16px;
+    border-radius: 100px;
+    margin-bottom: 16px;
+}
+
+.aff-badge-silver { background: rgba(192, 192, 192, 0.2); color: #6B7280; }
+.aff-badge-gold { background: rgba(245, 158, 11, 0.12); color: #B45309; }
+.aff-badge-platinum { background: rgba(139, 92, 246, 0.12); color: #6D28D9; }
+
+.aff-partner-tier-discount {
+    font-size: 56px;
+    font-weight: 800;
+    font-family: 'JetBrains Mono', monospace;
+    color: var(--gray-900);
+    line-height: 1;
+    margin-bottom: 4px;
+}
+
+.aff-partner-tier-discount span {
+    font-size: 28px;
+    color: var(--gray-400);
+}
+
+.aff-partner-tier-card ul {
+    list-style: none;
+    text-align: left;
+}
+
+.aff-partner-tier-card li {
+    padding: 6px 0;
+    font-size: 14px;
+    color: var(--gray-600);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.aff-partner-tier-card li svg {
+    flex-shrink: 0;
+}
+
+/* --- Audience Cards --- */
+.aff-audience-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    margin-top: 60px;
+}
+
+.aff-audience-card {
+    padding: 28px;
+    background: #fff;
+    border: 1px solid var(--gray-100);
+    border-radius: var(--radius-lg);
+    text-align: center;
+    transition: all 0.3s var(--ease);
+}
+
+.aff-audience-card:hover {
+    box-shadow: var(--shadow-md);
+    transform: translateY(-2px);
+}
+
+.aff-audience-icon {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--brand-50);
+    color: var(--brand);
+    border-radius: var(--radius-md);
+    margin: 0 auto 16px;
+}
+
+.aff-audience-card h4 {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--gray-900);
+    margin-bottom: 8px;
+}
+
+.aff-audience-card p {
+    font-size: 14px;
+    color: var(--gray-500);
+    line-height: 1.5;
+}
+
+/* Partner section audience cards on white bg */
+.aff-partner-section .aff-audience-card {
+    background: var(--gray-50);
+    border-color: var(--gray-200);
+}
+
+/* --- Earnings Calculator --- */
+.aff-calculator {
+    padding: 100px 0;
+    background: var(--gray-50);
+}
+
+.aff-calc-card {
+    max-width: 800px;
+    margin: 0 auto;
+    background: #fff;
+    border: 1px solid var(--gray-200);
+    border-radius: var(--radius-xl);
+    padding: 40px;
+    box-shadow: var(--shadow-lg);
+}
+
+.aff-calc-tabs {
+    display: flex;
+    gap: 0;
+    border-bottom: 2px solid var(--gray-200);
+    margin-bottom: 32px;
+}
+
+.aff-calc-tab {
+    padding: 12px 24px;
+    font-family: inherit;
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--gray-500);
+    background: none;
+    border: none;
+    border-bottom: 2px solid transparent;
+    margin-bottom: -2px;
+    cursor: pointer;
+    transition: all 0.2s var(--ease);
+}
+
+.aff-calc-tab:hover { color: var(--gray-700); }
+
+.aff-calc-tab.active {
+    color: var(--brand);
+    border-bottom-color: var(--brand);
+}
+
+.aff-calc-panel {
+    display: none;
+}
+
+.aff-calc-panel.active {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: start;
+    animation: fadeInUp 0.3s var(--ease);
+}
+
+.aff-calc-input-group {
+    margin-bottom: 28px;
+}
+
+.aff-calc-input-group label {
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--gray-700);
+    margin-bottom: 12px;
+}
+
+/* Custom range slider */
+.aff-slider {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%;
+    height: 8px;
+    background: var(--gray-100);
+    border-radius: 100px;
+    outline: none;
+    cursor: pointer;
+}
+
+.aff-slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 24px;
+    height: 24px;
+    background: var(--brand);
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(79, 70, 229, 0.3);
+    transition: transform 0.2s;
+}
+
+.aff-slider::-webkit-slider-thumb:hover {
+    transform: scale(1.15);
+}
+
+.aff-slider::-moz-range-thumb {
+    width: 24px;
+    height: 24px;
+    background: var(--brand);
+    border-radius: 50%;
+    cursor: pointer;
+    border: none;
+    box-shadow: 0 2px 8px rgba(79, 70, 229, 0.3);
+}
+
+.aff-slider-value {
+    margin-top: 8px;
+    font-size: 14px;
+    color: var(--gray-500);
+}
+
+.aff-slider-value span {
+    font-weight: 700;
+    font-family: 'JetBrains Mono', monospace;
+    color: var(--gray-900);
+}
+
+.aff-calc-result {
+    background: var(--brand-50);
+    border-radius: var(--radius-lg);
+    padding: 32px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 200px;
+}
+
+.aff-calc-tier-indicator {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    font-size: 14px;
+    color: var(--gray-500);
+    margin-bottom: 20px;
+}
+
+.aff-calc-tier-name {
+    font-weight: 700;
+    color: var(--gray-900);
+}
+
+.aff-calc-tier-pct {
+    font-weight: 700;
+    color: var(--brand);
+    font-family: 'JetBrains Mono', monospace;
+}
+
+.aff-calc-earnings {
+    margin-bottom: 12px;
+}
+
+.aff-calc-label {
+    display: block;
+    font-size: 14px;
+    color: var(--gray-500);
+    margin-bottom: 8px;
+}
+
+.aff-calc-amount {
+    display: block;
+    font-size: 48px;
+    font-weight: 800;
+    font-family: 'JetBrains Mono', monospace;
+    color: var(--brand);
+    line-height: 1;
+}
+
+.aff-calc-yearly {
+    font-size: 15px;
+    color: var(--gray-500);
+    margin-top: 4px;
+}
+
+.aff-calc-yearly strong {
+    color: var(--gray-900);
+    font-family: 'JetBrains Mono', monospace;
+}
+
+/* --- Resources --- */
+.aff-resources {
+    padding: 100px 0;
+}
+
+/* --- Testimonials --- */
+.aff-testimonials {
+    padding: 100px 0;
+    background: var(--gray-50);
+}
+
+.aff-testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.aff-testimonial-card {
+    background: #fff;
+    border: 1px solid var(--gray-200);
+    border-radius: var(--radius-lg);
+    padding: 32px;
+    transition: all 0.3s var(--ease);
+}
+
+.aff-testimonial-card:hover {
+    box-shadow: var(--shadow-lg);
+    transform: translateY(-2px);
+}
+
+.aff-testimonial-stars {
+    display: flex;
+    gap: 4px;
+    margin-bottom: 16px;
+}
+
+.aff-testimonial-card blockquote {
+    font-size: 15px;
+    color: var(--gray-600);
+    line-height: 1.7;
+    margin-bottom: 24px;
+    font-style: normal;
+}
+
+.aff-testimonial-author {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.aff-testimonial-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: var(--brand);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: 700;
+    color: #fff;
+    flex-shrink: 0;
+}
+
+.aff-testimonial-author strong {
+    display: block;
+    font-size: 14px;
+    color: var(--gray-900);
+}
+
+.aff-testimonial-author span {
+    font-size: 13px;
+    color: var(--gray-500);
+}
+
+/* --- FAQ --- */
+.aff-faq {
+    padding: 100px 0;
+}
+
+/* --- Application Form Section --- */
+.aff-apply {
+    padding: 100px 0;
+    background: var(--brand-900);
+}
+
+.aff-apply .section-header h2 {
+    color: #fff;
+}
+
+.aff-apply .section-header p {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.aff-apply-tag {
+    background: rgba(255, 255, 255, 0.1) !important;
+    color: rgba(255, 255, 255, 0.8) !important;
+}
+
+.aff-apply-card {
+    max-width: 700px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: var(--radius-xl);
+    padding: 40px;
+    box-shadow: var(--shadow-xl);
+}
+
+.aff-apply-tabs {
+    display: flex;
+    gap: 0;
+    border-bottom: 2px solid var(--gray-200);
+    margin-bottom: 28px;
+}
+
+.aff-apply-tab {
+    padding: 12px 24px;
+    font-family: inherit;
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--gray-500);
+    background: none;
+    border: none;
+    border-bottom: 2px solid transparent;
+    margin-bottom: -2px;
+    cursor: pointer;
+    transition: all 0.2s var(--ease);
+}
+
+.aff-apply-tab:hover { color: var(--gray-700); }
+
+.aff-apply-tab.active {
+    color: var(--brand);
+    border-bottom-color: var(--brand);
+}
+
+.aff-form {
+    display: none;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.aff-form.active {
+    display: flex;
+    animation: fadeInUp 0.25s var(--ease);
+}
+
+/* Textarea styling */
+.aff-form textarea {
+    padding: 12px 16px;
+    border: 2px solid var(--gray-200);
+    border-radius: var(--radius-sm);
+    font-family: inherit;
+    font-size: 15px;
+    color: var(--gray-900);
+    transition: border-color 0.2s;
+    background: #fff;
+    resize: vertical;
+    min-height: 100px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.aff-form textarea:focus {
+    outline: none;
+    border-color: var(--brand);
+    box-shadow: 0 0 0 3px var(--brand-100);
+}
+
+.aff-form textarea::placeholder {
+    color: var(--gray-400);
+}
+
+/* --- Responsive --- */
+@media (max-width: 1024px) {
+    .aff-tracks-grid {
+        grid-template-columns: 1fr;
+        max-width: 500px;
+    }
+
+    .aff-tiers-grid,
+    .aff-partner-tiers-grid {
+        grid-template-columns: 1fr;
+        max-width: 380px;
+        margin: 0 auto;
+    }
+
+    .aff-partner-tier-card.featured {
+        transform: none;
+    }
+
+    .aff-partner-tier-card.featured:hover {
+        transform: translateY(-4px);
+    }
+
+    .aff-testimonials-grid {
+        grid-template-columns: 1fr;
+        max-width: 500px;
+        margin: 0 auto;
+    }
+
+    .aff-calc-panel.active {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+
+    .aff-audience-grid {
+        grid-template-columns: 1fr;
+        max-width: 400px;
+        margin: 60px auto 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .aff-overview,
+    .aff-affiliate-section,
+    .aff-partner-section,
+    .aff-calculator,
+    .aff-resources,
+    .aff-testimonials,
+    .aff-faq,
+    .aff-apply {
+        padding: 60px 0;
+    }
+
+    .aff-apply-card {
+        padding: 24px;
+    }
+
+    .aff-calc-card {
+        padding: 24px;
+    }
+
+    .aff-calc-amount {
+        font-size: 36px;
+    }
+
+    .aff-tier-rate,
+    .aff-partner-tier-discount {
+        font-size: 48px;
+    }
+
+    .aff-tiers-header {
+        margin: 48px 0 28px;
+    }
+}
+
+@media (max-width: 480px) {
+    .aff-apply-card {
+        padding: 20px;
+    }
+
+    .aff-calc-card {
+        padding: 20px;
+    }
+
+    .aff-calc-tabs,
+    .aff-apply-tabs {
+        flex-direction: column;
+        border-bottom: none;
+        gap: 4px;
+    }
+
+    .aff-calc-tab,
+    .aff-apply-tab {
+        border-bottom: none;
+        border-left: 2px solid transparent;
+        text-align: left;
+        margin-bottom: 0;
+    }
+
+    .aff-calc-tab.active,
+    .aff-apply-tab.active {
+        border-bottom-color: transparent;
+        border-left-color: var(--brand);
+    }
+
+    .aff-calc-amount {
+        font-size: 32px;
+    }
+
+    .aff-tier-rate,
+    .aff-partner-tier-discount {
+        font-size: 40px;
+    }
+}
